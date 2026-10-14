@@ -81,6 +81,11 @@ section h1 {
     gap: 50px;
 }
 
+.redes {
+    color: white;
+    text-decoration-line: none;
+    font-size: 20px;
+}
 
 footer {
     background-color: rgb(20, 46, 85);
