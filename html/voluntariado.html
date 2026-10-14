@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de voluntariado</title>
+    <link rel="stylesheet" href="../css/style.css">
+
 </head>
 
 <body>
@@ -18,17 +20,19 @@
             <label for="correo">Correo electrónico</label><br>
             <input id="correo" name="correo" type="email" required><br>
 
+            <p class="Vol">Tipos de Voluntariado</p>
+
             <input id="rescate" name="area" type="radio" value="rescate">
             <label for="rescate">Socorrista</label><br>
             <input id="ayuda" name="area" type="radio" value="ayuda">
             <label for="ayuda">Marinero</label><br>
             <input id="logistica" name="area" type="radio" value="logistica">
             <label for="logistica">Sanitario</label><br>
-
-            <input id="bicicleta" name="transporte" type="checkbox" value="bicicleta">
-            <label for="bicicleta">Bici</label><br>
-            <input id="coche" name="transporte" type="checkbox" value="coche">
-            <label for="coche">Coche</label><br>
+            
+            <input id="bicicleta" name="Patron" type="radio" value="Patron">
+            <label for="bicicleta">Patron</label><br>
+            <input id="coche" name="Otros" type="radio" value="Patron">
+            <label for="coche">Otros</label><br>
 
             <label for="provincia">Provincia</label><br>
             <select id="provincia" name="provincia">
