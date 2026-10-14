@@ -19,6 +19,7 @@ header {
     color: black;
     text-decoration-line: none;
     font-size: 20px;
+    margin-left: 20px;
 }
 
 .btn {
@@ -81,10 +82,10 @@ section h1 {
     gap: 50px;
 }
 
-.redes {
-    color: white;
-    text-decoration-line: none;
-    font-size: 20px;
+.redes img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
 }
 
 footer {
