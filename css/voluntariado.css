@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    background-color: white;
+    text-align: right;
+    margin: 50px;
+}
+
+.header {
+    color: black;
+    text-decoration-line: none;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration-line: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.voluntariado h1 {
+    color: rgb(20, 46, 85);
+    text-align: center;
+}
+.voluntariado  {
+    text-align: center;
+    margin-top: 20px;
+    padding: 100px;
+    gap: 20px;
+}
+
+.voluntariado-formulario {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    gap: 150px;
+}
+
+.voluntariado-formulario button {
+    background-color: rgb(20, 46, 85);
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 10px 16px;
+}
+
+.voluntariado-formulario button a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.col-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.col-4 img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.redes img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: rgb(20, 46, 85);
+    color: white;
+    padding: 20px;
+}
