@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
     <title>Aita Mari</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -36,3 +37,59 @@
 </body>
 
 </html>
+=======
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de voluntariado</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Formulario de voluntariado</legend>
+
+            <label for="nombre">Nombre y apellidos</label><br>
+            <input id="nombre" name="nombre" type="text" required><br>
+
+            <label for="correo">Correo electrónico</label><br>
+            <input id="correo" name="correo" type="email" required><br>
+
+            <p class="Vol">Tipos de Voluntariado</p>
+
+            <input id="rescate" name="area" type="radio" value="rescate">
+            <label for="rescate">Socorrista</label><br>
+            <input id="ayuda" name="area" type="radio" value="ayuda">
+            <label for="ayuda">Marinero</label><br>
+            <input id="logistica" name="area" type="radio" value="logistica">
+            <label for="logistica">Sanitario</label><br>
+            
+            <input id="bicicleta" name="Patron" type="radio" value="Patron">
+            <label for="bicicleta">Patron</label><br>
+            <input id="coche" name="Otros" type="radio" value="Patron">
+            <label for="coche">Otros</label><br>
+
+            <label for="provincia">Provincia</label><br>
+            <select id="provincia" name="provincia">
+                <option value="alava">Álava</option>
+                <option value="bizkaia">Bizkaia</option>
+                <option value="gipuzkoa">Gipuzkoa</option>
+            </select>
+            <input aria-label="Fecha disponible" name="fecha" type="date">
+            <input aria-label="Hora disponible" name="hora" type="time"><br>
+
+            <label for="telefono">Teléfono</label><br>
+            <input id="telefono" name="telefono" type="tel"><br>
+
+            <input id="terminos" name="terminos" type="checkbox" required>
+            <label for="terminos">Acepto los términos y condiciones</label><br>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset</button>
+            <button type="button">Haz clic!</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
+>>>>>>> 6e39311903f195fadc6dfa6b4638557b489dea90
