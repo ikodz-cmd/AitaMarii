@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    background-color: white;
+    text-align: right;
+    margin: 50px;
+}
+
+.header {
+    color: black;
+    text-decoration-line: none;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration-line: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+section h1 {
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+#Humanitario {
+    color: #f7a60f;
+}
+
+.contenedor img {
+    height: auto;
+    width: 130%;
+}
+
+.contenedor {
+    background-image: url("../img/aitamari.jpg");
+    background-size: cover;
+    display: flex;
+    gap: 210px;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 200px 100px;
+    ;
+}
+
+.cold-6 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 40vh;
+}
+
+.card-1 {
+    background-image: url(../img/caja1.jpg);
+    background-size: cover;
+    width: 100%;
+    border: 2px solid;
+    padding: 60px;
+    gap: 50px;
+
+}
+
+.card {
+    background-image: url(../img/caja2.jpg);
+    background-size: cover;
+    width: 100%;
+    border: 2px solid;
+    padding: 60px;
+    gap: 50px;
+}
+
+#historia {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(20, 46, 85);
+    margin-bottom: 16px;
+}
+
+.historia {
+    background-color: #f3f5f7;
+    border-top: 5px solid #f7a60f;
+    color: #263238;
+    padding: 40px 8%;
+}
+
+
+.historia button {
+    background-color: #f7a60f;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 10px 16px;
+}
+
+.historia button a {
+    color: rgb(20, 46, 85);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.historia p {
+    line-height: 1.6;
+    margin-bottom: 12px;
+    max-width: 900px;
+}
+
+
+.voluntariado {
+    background-color: #f3f5f7;
+    border-top: 100px solid #ffffff;
+    color: #263238;
+    padding: 40px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.voluntariado-texto {
+    flex: 1;
+}
+
+.voluntariado button {
+    background-color: rgb(20, 46, 85);
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 10px 16px;
+}
+
+.voluntariado button a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.voluntariado img {
+    width: 45%;
+    height: auto;
+    object-fit: cover;
+    flex-direction: column;
+}
+
+
+.redes img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: rgb(20, 46, 85);
+    color: white;
+    padding: 20px;
+}
