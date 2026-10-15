@@ -81,44 +81,16 @@ section h1 {
     padding: 60px;
     gap: 50px;
 }
-
-<<<<<<< HEAD
-#historia {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(20, 46, 85);
-    margin-bottom: 16px;
-=======
-.redes img {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-}
-
-footer {
-    background-color: rgb(20, 46, 85);
-    color: white;
-    padding: 20px;
-}
-
-#historia {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
->>>>>>> 6e39311903f195fadc6dfa6b4638557b489dea90
-}
-
 .historia {
     background-color: #f3f5f7;
     border-top: 5px solid #f7a60f;
     color: #263238;
     padding: 40px 8%;
 }
-
-<<<<<<< HEAD
-=======
 .historia h2 {
     color: rgb(20, 46, 85);
     margin-bottom: 16px;
 }
->>>>>>> 6e39311903f195fadc6dfa6b4638557b489dea90
 
 .historia button {
     background-color: #f7a60f;
@@ -139,7 +111,6 @@ footer {
     line-height: 1.6;
     margin-bottom: 12px;
     max-width: 900px;
-<<<<<<< HEAD
 }
 
 
@@ -191,6 +162,4 @@ footer {
     background-color: rgb(20, 46, 85);
     color: white;
     padding: 20px;
-=======
->>>>>>> 6e39311903f195fadc6dfa6b4638557b489dea90
 }
