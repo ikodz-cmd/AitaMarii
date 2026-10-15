@@ -94,4 +94,39 @@ footer {
     padding: 20px;
 }
 
-.vol {font-size: large;}
+#historia {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.historia {
+    background-color: #f3f5f7;
+    border-top: 5px solid #f7a60f;
+    color: #263238;
+    padding: 40px 8%;
+}
+
+.historia h2 {
+    color: rgb(20, 46, 85);
+    margin-bottom: 16px;
+}
+
+.historia button {
+    background-color: #f7a60f;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 10px 16px;
+}
+
+.historia button a {
+    color: rgb(20, 46, 85);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.historia p {
+    line-height: 1.6;
+    margin-bottom: 12px;
+    max-width: 900px;
+}
