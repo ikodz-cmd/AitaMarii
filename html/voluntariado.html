@@ -5,51 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de voluntariado</title>
+    <link rel="stylesheet" href="../css/voluntariado.css">
+
 </head>
 
 <body>
-    <form>
-        <fieldset>
-            <legend>Formulario de voluntariado</legend>
+    <header>
+        <nav>
+            <a class="header" href="index.html">Inicio</a>
+            <a class="header" href="#">¿Quienes somos?</a>
+            <a class="header" href="#">Rutas</a>
+            <a class="header" href="voluntariado.html">Voluntariado</a>
 
-            <label for="nombre">Nombre y apellidos</label><br>
-            <input id="nombre" name="nombre" type="text" required><br>
+            <a class="btn" href="#">Iniciar Sesión</a>
+        </nav>
+    </header>
 
-            <label for="correo">Correo electrónico</label><br>
-            <input id="correo" name="correo" type="email" required><br>
+    <main class="voluntariado">
+        <h1>Tu ayuda salva vidas, contamos contigo.</h1>
+        <div class="voluntariado-texto">
+            <p>SMH consigue salir adelante gracias a la ayuda de la sociedad civil. Solamente somos un
+                eslabón de la cadena de solidaridad de la sociedad.<br>
+                Contamos contigo y puedes ayudar de diferentes formas:</p>
+        </div>
+    </main>
 
-            <input id="rescate" name="area" type="radio" value="rescate">
-            <label for="rescate">Socorrista</label><br>
-            <input id="ayuda" name="area" type="radio" value="ayuda">
-            <label for="ayuda">Marinero</label><br>
-            <input id="logistica" name="area" type="radio" value="logistica">
-            <label for="logistica">Sanitario</label><br>
+    <section class="voluntariado-formulario">
+        <div class="col-4">
+            <img src="../img/donas.jpg" alt="Donar">
+            <button><a class="boton" href="#">
+                    <h2>Donas</h2>
+                </a>
+        </div>
+        <div class="col-4">
+            <img src="../img/rescate.jpg" alt="Socio">
+            <button><a class="boton" href="#">
+                    <h2>Hazte soci@</h2>
+                </a>
+        </div>
+        <div class="col-4">
+            <img src="../img/voluntarios.jpg" alt="Voluntariado">
+            <button><a class="boton" href="voluntario.html">
+                    <h2>Voluntariado</h2>
+                </a>
+        </div>
+    </section>
 
-            <input id="bicicleta" name="transporte" type="checkbox" value="bicicleta">
-            <label for="bicicleta">Bici</label><br>
-            <input id="coche" name="transporte" type="checkbox" value="coche">
-            <label for="coche">Coche</label><br>
 
-            <label for="provincia">Provincia</label><br>
-            <select id="provincia" name="provincia">
-                <option value="alava">Álava</option>
-                <option value="bizkaia">Bizkaia</option>
-                <option value="gipuzkoa">Gipuzkoa</option>
-            </select>
-            <input aria-label="Fecha disponible" name="fecha" type="date">
-            <input aria-label="Hora disponible" name="hora" type="time"><br>
 
-            <label for="telefono">Teléfono</label><br>
-            <input id="telefono" name="telefono" type="tel"><br>
 
-            <input id="terminos" name="terminos" type="checkbox" required>
-            <label for="terminos">Acepto los términos y condiciones</label><br>
-
-            <button type="submit">Enviar</button>
-            <button type="reset">Reset</button>
-            <button type="button">Haz clic!</button>
-        </fieldset>
-    </form>
+    <footer>
+        <a href="#" class="redes"><img src="../img/instagram.png" alt="Instagram"></a>
+        <a href="#" class="redes"><img src="../img/facebook.png" alt="Facebook"></a>
+        <a href="#" class="redes"><img src="../img/x.png" alt="Twitter"></a>
+        <p>2026 Aita Mari. Todos los derechos reservados.</p>
+    </footer>
 </body>
 
 </html>

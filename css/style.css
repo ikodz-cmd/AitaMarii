@@ -82,6 +82,78 @@ section h1 {
     gap: 50px;
 }
 
+.historia {
+    background-color: #f3f5f7;
+    border-top: 5px solid #f7a60f;
+    color: #263238;
+    padding: 40px 8%;
+}
+
+.historia h2 {
+    color: rgb(20, 46, 85);
+    margin-bottom: 16px;
+}
+
+.historia button {
+    background-color: #f7a60f;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 10px 16px;
+}
+
+.historia button a {
+    color: rgb(20, 46, 85);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.historia p {
+    line-height: 1.6;
+    margin-bottom: 12px;
+    max-width: 900px;
+}
+
+
+.voluntariado {
+    background-color: #f3f5f7;
+    border-top: 100px solid #ffffff;
+    color: #263238;
+    padding: 40px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.voluntariado-texto {
+    flex: 1;
+}
+
+.voluntariado button {
+    background-color: rgb(20, 46, 85);
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 10px 16px;
+}
+
+.voluntariado button a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.voluntariado img {
+    width: 45%;
+    height: auto;
+    object-fit: cover;
+    flex-direction: column;
+}
+
+
 .redes img {
     width: 40px;
     height: 40px;

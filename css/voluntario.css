@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    background-color: white;
+    text-align: right;
+    margin: 50px;
+}
+
+.header {
+    color: black;
+    text-decoration-line: none;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration-line: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.contenedor {
+    padding: 30px;
+    justify-content: center;
+
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: rgb(14, 35, 73);
+    outline: 3px solid;
+}
+
+.redes img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: rgb(20, 46, 85);
+    color: white;
+    padding: 20px;
+}
