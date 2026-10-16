@@ -31,6 +31,25 @@ header {
     font-size: 20px;
 }
 
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.btn {
+    background-color: #0f274a;
+    color: white;
+    padding: 10px 22px;
+    text-decoration: none;
+    border-radius: 999px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
 section h1 {
     font-size: 50px;
     margin-top: 50px;
@@ -81,12 +100,14 @@ section h1 {
     padding: 60px;
     gap: 50px;
 }
+
 .historia {
     background-color: #f3f5f7;
     border-top: 5px solid #f7a60f;
     color: #263238;
     padding: 40px 8%;
 }
+
 .historia h2 {
     color: rgb(20, 46, 85);
     margin-bottom: 16px;

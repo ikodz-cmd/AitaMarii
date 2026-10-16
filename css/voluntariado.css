@@ -31,11 +31,31 @@ header {
     font-size: 20px;
 }
 
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.btn {
+    background-color: #0f274a;
+    color: white;
+    padding: 10px 22px;
+    text-decoration: none;
+    border-radius: 999px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
 .voluntariado h1 {
     color: rgb(20, 46, 85);
     text-align: center;
 }
-.voluntariado  {
+
+.voluntariado {
     text-align: center;
     margin-top: 20px;
     padding: 100px;
@@ -75,6 +95,7 @@ header {
     width: 300px;
     height: 300px;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .redes img {

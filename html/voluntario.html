@@ -20,25 +20,26 @@
         </nav>
     </header>
 
-    <section class="contendor">
-        <div class="formulario">
-            <legend>Encíanos un email</legend>
-            <label for="nombre">Nombre y Apellido</label>
-            <input type="text" name="nombre" id="text"><br>
-            <label for="dirección">Correo electrónico</label>
-            <input type="text" name="correo" id="text"><br>
+    <section class="contenedor">
+        <form class="formulario" action="#" method="post">
+            <h2>Envíanos un email</h2>
+            <label for="nombre">Nombre y apellidos</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apelido">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" name="correo" id="correo" placeholder="Correo electrónico">
             <label for="telefono">Teléfono</label>
-            <input type="text" name="telefono" id="text"><br>
-            <select>
-                <option value="Seleccioa una opción">Seleccioa una opción</option>
+            <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+            <select id="puesto" name="puesto">
+                <option value="" selected disabled>Selecciona una opción</option>
                 <option value="Socorrista">Socorrista</option>
                 <option value="Patrón">Patrón</option>
-                <option value="Mariner">Mariner@</option>
+                <option value="Mariner@">Mariner@</option>
                 <option value="Sanitario">Sanitario</option>
                 <option value="Otros">Otros</option>
-            </select> <br>
-            <input type="submit" value="Enviar formulario">
-        </div>
+            </select>
+
+            <button type="submit">Enviar formulario</button>
+        </form>
     </section>
 
 
