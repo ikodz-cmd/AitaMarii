@@ -49,13 +49,7 @@ header nav {
     color: rgb(20, 46, 85);
 }
 
-@media (max-width: 650px) {
-    header nav {
-        flex-wrap: wrap;
-        gap: 16px;
-        justify-content: center;
-    }
-}
+
 
 nav {
     display: flex;
@@ -160,10 +154,37 @@ section h1 {
     max-width: 900px;
 }
 
+.historia-contenido {
+    align-items: center;
+    display: flex;
+    gap: 32px;
+}
+
+.historia-texto {
+    flex: 1.2;
+}
+
+.tabla {
+    background-color: #ffffff;
+    border: 2px solid #142e55;
+    border-collapse: collapse;
+    border-radius: 20px;
+    border-spacing: 0;
+    box-shadow: 0 4px 12px #00000020;
+    color: #1f2933;
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.6;
+    min-width: 0;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+}
+
 
 .voluntariado {
     background-color: #f3f5f7;
-    border-top: 100px solid #ffffff;
+    border-top: 100px solid #fffefe;
     color: #263238;
     padding: 40px 8%;
     display: flex;
@@ -235,13 +256,12 @@ section h1 {
 
 .voluntariado {
     background-color: #f3f5f7;
-    border-top: 100px solid #ffffff;
     color: #263238;
     padding: 40px 8%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    gap: 10px;
 }
 
 .voluntariado-texto {

@@ -11,25 +11,45 @@ body {
 
 header {
     background-color: white;
-    text-align: right;
-    margin: 50px;
+    box-shadow: 0 2px 8px #0000001a;
+    padding: 18px 6%;
+}
+
+header nav {
+    align-items: center;
+    display: flex;
+    gap: 24px;
+    justify-content: flex-end;
 }
 
 .header {
-    color: black;
-    text-decoration-line: none;
-    font-size: 20px;
-    margin-left: 20px;
+    color: rgb(20, 46, 85);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.header:hover {
+    color: #f7a60f;
 }
 
 .btn {
-    background-color: black;
+    background-color: rgb(20, 46, 85);
+    border-radius: 6px;
     color: white;
-    padding: 10px 20px;
-    text-decoration-line: none;
-    border-radius: 10px;
-    font-size: 20px;
+    font-size: 16px;
+    padding: 11px 18px;
+    text-decoration: none;
+    transition: background-color 0.2s;
 }
+
+.btn:hover {
+    background-color: #f7a60f;
+    color: rgb(20, 46, 85);
+}
+
+
 
 nav {
     display: flex;
