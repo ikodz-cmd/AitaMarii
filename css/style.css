@@ -11,8 +11,17 @@ body {
 
 header {
     background-color: white;
-    box-shadow: 0 2px 8px #0000001a;
-    padding: 18px 6%;
+    padding: 18px 2%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 150px;
+    object-fit: cover;
+    align-items: center;
+
 }
 
 header nav {
@@ -27,7 +36,6 @@ header nav {
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
-    transition: color 0.2s;
 }
 
 .header:hover {
@@ -41,15 +49,12 @@ header nav {
     font-size: 16px;
     padding: 11px 18px;
     text-decoration: none;
-    transition: background-color 0.2s;
 }
 
 .btn:hover {
     background-color: #f7a60f;
     color: rgb(20, 46, 85);
 }
-
-
 
 nav {
     display: flex;
