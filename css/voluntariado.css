@@ -140,3 +140,113 @@ footer {
     color: white;
     padding: 20px;
 }
+
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+        text-align: center;
+    }
+
+    header nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .voluntariado {
+        flex-direction: column;
+        gap: 40px;
+        padding: 120px 5%;
+    }
+
+    .voluntariado-formulario {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .voluntariado img {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 120px;
+    }
+
+    header {
+        padding: 16px 4%;
+    }
+
+    header nav {
+        gap: 12px;
+    }
+
+    .header,
+    .btn {
+        font-size: 14px;
+    }
+
+    section h1 {
+        font-size: 38px;
+        margin-top: 0;
+    }
+
+    .contenedor {
+        padding: 80px 20px;
+    }
+
+    .cold-6 {
+        min-height: auto;
+    }
+
+    .card-1,
+    .card {
+        padding: 30px 20px;
+    }
+
+    .historia {
+        padding: 30px 5%;
+    }
+
+    .tabla {
+        display: block;
+        overflow-x: auto;
+        font-size: 13px;
+    }
+
+    .voluntariado {
+        padding: 30px 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav {
+        width: 100%;
+    }
+
+    .header,
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    section h1 {
+        font-size: 30px;
+    }
+
+    .historia p,
+    .historia-texto p {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 10px 14px;
+    }
+
+    footer {
+        text-align: center;
+    }
+}

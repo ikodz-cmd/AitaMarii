@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    background-color: white;
+    padding: 18px 2%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 150px;
+    object-fit: cover;
+    align-items: center;
+
+}
+
+header nav {
+    align-items: center;
+    display: flex;
+    gap: 24px;
+    justify-content: flex-end;
+}
+
+.header {
+    color: rgb(20, 46, 85);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header:hover {
+    color: #f7a60f;
+}
+
+.btn {
+    background-color: rgb(20, 46, 85);
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    padding: 11px 18px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #f7a60f;
+    color: rgb(20, 46, 85);
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.btn {
+    background-color: #0f274a;
+    color: white;
+    padding: 10px 22px;
+    text-decoration: none;
+    border-radius: 999px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+
+.redes img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: rgb(20, 46, 85);
+    color: white;
+    padding: 20px;
+}
