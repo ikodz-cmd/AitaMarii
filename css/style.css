@@ -114,6 +114,7 @@ section h1 {
     border: 2px solid;
     padding: 60px;
     gap: 50px;
+    border-radius: 1cm;
 
 }
 
@@ -124,17 +125,20 @@ section h1 {
     border: 2px solid;
     padding: 60px;
     gap: 50px;
+    border-radius: 1cm;
 }
 
 .historia {
     background-color: #f3f5f7;
     border-top: 5px solid #f7a60f;
+    color: #263238;
     padding: 40px 8%;
 }
 
 .historia h2 {
     color: rgb(20, 46, 85);
     margin-bottom: 16px;
+    font-size:1cm
 }
 
 .historia button {
@@ -156,6 +160,7 @@ section h1 {
     line-height: 1.6;
     margin-bottom: 12px;
     max-width: 900px;
+    font-size:;
 }
 
 .historia-contenido {
@@ -188,8 +193,12 @@ section h1 {
 
 .voluntariado {
     background-color: #f3f5f7;
+<<<<<<< Updated upstream
     margin-top: 150px;
+=======
+>>>>>>> Stashed changes
     color: #263238;
+    border-color: ;
     padding: 40px 8%;
     display: flex;
     align-items: center;
@@ -222,6 +231,41 @@ section h1 {
     object-fit: cover;
     flex-direction: column;
 }
+
+
+.historia {
+    background-color: #f3f5f7;
+    border-top: 5px solid #f7a60f;
+    color: #263238;
+    padding: 40px 8%;
+}
+
+.historia h2 {
+    color: rgb(20, 46, 85);
+    margin-bottom: 16px;
+}
+
+.historia button {
+    background-color: #f7a60f;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 10px 16px;
+}
+
+.historia button a {
+    color: rgb(20, 46, 85);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.historia p {
+    line-height: 1.6;
+    margin-bottom: 12px;
+    max-width: 900px;
+}
+
 
 .voluntariado {
     background-color: #f3f5f7;
@@ -259,6 +303,7 @@ section h1 {
     flex-direction: column;
     border-radius: 20px;
 }
+
 
 .redes img {
     width: 40px;
