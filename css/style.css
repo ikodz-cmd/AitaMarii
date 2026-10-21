@@ -139,7 +139,7 @@ section h1 {
 .historia h2 {
     color: rgb(20, 46, 85);
     margin-bottom: 16px;
-    font-size: 1cm
+    font-size: 1cm;
 }
 
 .historia button {
@@ -162,6 +162,7 @@ section h1 {
     margin-bottom: 12px;
     max-width: 900px;
     font-size: 14px;
+
 }
 
 .historia-contenido {
