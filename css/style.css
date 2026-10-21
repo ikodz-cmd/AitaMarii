@@ -188,7 +188,7 @@ section h1 {
 
 .voluntariado {
     background-color: #f3f5f7;
-    border-top: 100px solid #fffefe;
+    margin-top: 150px;
     color: #263238;
     padding: 40px 8%;
     display: flex;
