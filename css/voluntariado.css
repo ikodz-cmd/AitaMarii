@@ -50,7 +50,6 @@ header nav {
     font-size: 16px;
     padding: 11px 18px;
     text-decoration: none;
-    transition: background-color 0.2s;
 }
 
 .btn:hover {
@@ -88,15 +87,14 @@ nav {
     text-align: center;
     margin-top: 20px;
     padding: 100px;
-    gap: 20px;
 
 }
 
 .voluntariado-formulario {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     padding-bottom: 100px;
-    gap: 150px;
 }
 
 .voluntariado-formulario button {
@@ -142,7 +140,8 @@ footer {
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
+
     header {
         flex-direction: column;
         gap: 18px;
@@ -154,34 +153,8 @@ footer {
         flex-wrap: wrap;
     }
 
-    .voluntariado {
-        flex-direction: column;
-        gap: 40px;
-        padding: 120px 5%;
-    }
-
-    .voluntariado-formulario {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .voluntariado img {
-        width: 100%;
-        max-width: 500px;
-    }
-}
-
-@media (max-width: 768px) {
     .logo img {
         width: 120px;
-    }
-
-    header {
-        padding: 16px 4%;
-    }
-
-    header nav {
-        gap: 12px;
     }
 
     .header,
@@ -218,7 +191,19 @@ footer {
     }
 
     .voluntariado {
-        padding: 30px 5%;
+        flex-direction: column;
+        gap: 40px;
+        padding: 50px 5%;
+    }
+
+    .voluntariado-formulario {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .voluntariado img {
+        width: 100%;
+        max-width: 500px;
     }
 }
 
@@ -242,11 +227,19 @@ footer {
         font-size: 14px;
     }
 
-    .btn {
-        padding: 10px 14px;
+    .voluntariado {
+        flex-direction: column;
+        gap: 40px;
+        padding: 50px 5%;
     }
 
-    footer {
+    .voluntariado-formulario {
+        flex-direction: column;
         text-align: center;
+    }
+
+    .voluntariado img {
+        width: 100%;
+        max-width: 500px;
     }
 }

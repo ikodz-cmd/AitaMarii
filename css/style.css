@@ -9,6 +9,25 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "historia"
+        "voluntario"
+    ;
+    gap: 30px;
+}
+
+.historia {
+    grid-area: historia;
+}
+
+.voluntario {
+    grid-area: voluntario;
+}
+
+
 
 header {
     background-color: white;
@@ -78,11 +97,10 @@ nav {
 
 section h1 {
     font-size: 50px;
-    margin-top: 50px;
 }
 
 #Humanitario {
-    color: #f7a60f;
+    color: rgb(20, 46, 85);
 }
 
 .contenedor img {
@@ -98,6 +116,7 @@ section h1 {
     padding: 200px 100px;
     position: relative;
     overflow: hidden;
+
 }
 
 .fondo-video {
@@ -106,18 +125,30 @@ section h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    color: rgba(0, 0, 0, 0.6);
+
+
 }
 
-.contenedor > section {
+.contenedor>section {
     position: relative;
     z-index: 1;
+    margin: 10px, 40px;
 }
 
-.cold-6 {
+.cold-12 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    min-height: 40vh;
+}
+
+.caja1 {
     display: flex;
     flex-direction: column;
     gap: 20px;
     min-height: 40vh;
+    justify-content: center;
 }
 
 .card-1 {
@@ -142,10 +173,14 @@ section h1 {
 }
 
 .historia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 140px;
     background-color: #f3f5f7;
     border-top: 5px solid #f7a60f;
     color: #263238;
-    padding: 40px 8%;
+    padding: 80px 8%;
 }
 
 .historia h2 {
@@ -177,7 +212,6 @@ section h1 {
 }
 
 .historia-contenido {
-    align-items: center;
     display: flex;
     gap: 32px;
 }
@@ -187,27 +221,31 @@ section h1 {
 }
 
 .tabla {
-    background-color: #ffffff;
-    border: 2px solid #142e55;
     border-collapse: collapse;
-    border-radius: 20px;
-    border-spacing: 0;
-    box-shadow: 0 4px 12px #00000020;
-    color: #1f2933;
-    flex: 1;
-    font-size: 15px;
-    line-height: 1.6;
-    min-width: 0;
-    padding: 10px;
-    text-align: left;
     width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    line-height: 1.6;
+
 }
 
+td,
+th {
+    padding: 12px;
+    text-align: left;
+    min-width: 0;
+}
 
+th {
+    background-color: #0f274a;
+    color: white;
+    border-radius: 10px;
+}
 
+tr:nth-child(even) {
+    background: #dadada;
+    color: black;
 
-.voluntariado-texto {
-    flex: 1;
 }
 
 .voluntariado button {
@@ -233,14 +271,7 @@ section h1 {
 }
 
 
-.historia {
-    background-color: #f3f5f7;
-    border-top: 5px solid #f7a60f;
-    color: #263238;
-    padding: 40px 8%;
-}
-
-.historia h2 {
+#historia {
     color: rgb(20, 46, 85);
     margin-bottom: 16px;
 }
@@ -317,7 +348,7 @@ footer {
     padding: 20px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     header {
         flex-direction: column;
         gap: 18px;
@@ -335,22 +366,11 @@ footer {
         padding: 120px 5%;
     }
 
-    .historia-contenido {
-        flex-direction: column;
-    }
-
-    .voluntariado {
-        flex-direction: column;
-        text-align: center;
-    }
-
     .voluntariado img {
         width: 100%;
         max-width: 500px;
     }
-}
 
-@media (max-width: 768px) {
     .logo img {
         width: 120px;
     }
@@ -384,20 +404,6 @@ footer {
     .card-1,
     .card {
         padding: 30px 20px;
-    }
-
-    .historia {
-        padding: 30px 5%;
-    }
-
-    .tabla {
-        display: block;
-        overflow-x: auto;
-        font-size: 13px;
-    }
-
-    .voluntariado {
-        padding: 30px 5%;
     }
 }
 
