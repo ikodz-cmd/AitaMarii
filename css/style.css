@@ -100,12 +100,18 @@ section h1 {
 }
 
 #Humanitario {
-    color: rgb(20, 46, 85);
+    color: rgb(27, 118, 255);
 }
 
-.contenedor img {
-    height: auto;
-    width: 100%;
+
+
+.contenedor h1 {
+    color: white;
+
+}
+
+#blanco {
+    color: white;
 }
 
 .contenedor {
@@ -119,19 +125,16 @@ section h1 {
 
 }
 
-.fondo-video {
+.fondo {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    color: rgba(0, 0, 0, 0.6);
-
-
+    filter: brightness(0.3);
 }
 
 .contenedor>section {
-    position: relative;
     z-index: 1;
     margin: 10px, 40px;
 }
@@ -189,20 +192,6 @@ section h1 {
     font-size: 1cm;
 }
 
-.historia button {
-    background-color: #f7a60f;
-    border: 0;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    padding: 10px 16px;
-}
-
-.historia button a {
-    color: rgb(20, 46, 85);
-    font-weight: bold;
-    text-decoration: none;
-}
 
 .historia p {
     line-height: 1.6;
@@ -221,34 +210,29 @@ section h1 {
 }
 
 .tabla {
-    border-collapse: collapse;
-    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 16px;
     line-height: 1.6;
-
 }
 
 td,
 th {
-    padding: 12px;
+    padding: 14px 16px;
     text-align: left;
     min-width: 0;
 }
 
 th {
-    background-color: #0f274a;
+    background: rgb(20, 46, 85);
     color: white;
-    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-tr:nth-child(even) {
-    background: #dadada;
-    color: black;
 
-}
-
-.voluntariado button {
+button {
     background-color: rgb(20, 46, 85);
     border: 0;
     border-radius: 6px;
@@ -257,7 +241,7 @@ tr:nth-child(even) {
     padding: 10px 16px;
 }
 
-.voluntariado button a {
+button a {
     color: white;
     font-weight: bold;
     text-decoration: none;
@@ -270,25 +254,9 @@ tr:nth-child(even) {
     flex-direction: column;
 }
 
-
 #historia {
     color: rgb(20, 46, 85);
     margin-bottom: 16px;
-}
-
-.historia button {
-    background-color: #f7a60f;
-    border: 0;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    padding: 10px 16px;
-}
-
-.historia button a {
-    color: rgb(20, 46, 85);
-    font-weight: bold;
-    text-decoration: none;
 }
 
 .historia p {
@@ -296,7 +264,6 @@ tr:nth-child(even) {
     margin-bottom: 12px;
     max-width: 900px;
 }
-
 
 .voluntariado {
     background-color: #f3f5f7;
@@ -321,12 +288,6 @@ tr:nth-child(even) {
     padding: 10px 16px;
 }
 
-.voluntariado button a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-
 .voluntariado img {
     width: 45%;
     height: auto;
@@ -348,7 +309,8 @@ footer {
     padding: 20px;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 480px) {
     header {
         flex-direction: column;
         gap: 18px;
@@ -358,77 +320,74 @@ footer {
     header nav {
         justify-content: center;
         flex-wrap: wrap;
-    }
-
-    .contenedor {
-        flex-direction: column;
-        gap: 40px;
-        padding: 120px 5%;
-    }
-
-    .voluntariado img {
         width: 100%;
-        max-width: 500px;
     }
 
     .logo img {
         width: 120px;
     }
 
-    header {
-        padding: 16px 4%;
-    }
-
-    header nav {
-        gap: 12px;
-    }
-
-    .header,
-    .btn {
-        font-size: 14px;
-    }
-
-    section h1 {
-        font-size: 38px;
-        margin-top: 0;
-    }
-
-    .contenedor {
-        padding: 80px 20px;
-    }
-
-    .cold-6 {
-        min-height: auto;
-    }
-
-    .card-1,
-    .card {
-        padding: 30px 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    header nav {
-        width: 100%;
-    }
-
     .header,
     .btn {
         width: 100%;
         text-align: center;
-    }
-
-    section h1 {
-        font-size: 30px;
-    }
-
-    .historia p,
-    .historia-texto p {
         font-size: 14px;
     }
 
-    .btn {
-        padding: 10px 14px;
+    .contenedor {
+        flex-direction: column;
+        gap: 30px;
+        padding: 80px 20px;
+    }
+
+    section h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .historia {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 40px 5%;
+    }
+
+    .historia h2 {
+        font-size: 28px;
+    }
+
+    .historia-contenido {
+        flex-direction: column;
+    }
+
+    .tabla {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        border-radius: 12px;
+    }
+
+    .voluntariado {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 40px 5%;
+    }
+
+    .voluntariado img {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .voluntariado-formulario {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .voluntariado-formulario img {
+        width: 100%;
+        max-width: 260px;
+        height: 260px;
     }
 
     footer {

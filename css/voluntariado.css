@@ -11,22 +11,19 @@ body {
 .voluntariado-formulario {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-        "donar socio voluntario"
-    ;
     gap: 30px;
+    justify-items: center;
+
 }
 
-.donar {
-    grid-area: donar;
-}
-
-.socio {
-    grid-area: socio;
-}
-
+.donar,
+.socio,
 .voluntario {
-    grid-area: voluntario;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    max-width: 420px;
 }
 
 
@@ -45,7 +42,6 @@ header {
 
 }
 
-
 header nav {
     align-items: center;
     display: flex;
@@ -58,7 +54,6 @@ header nav {
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
-    transition: color 0.2s;
 }
 
 .header:hover {
@@ -79,8 +74,6 @@ header nav {
     color: rgb(20, 46, 85);
 }
 
-
-
 nav {
     display: flex;
     justify-content: flex-end;
@@ -100,39 +93,31 @@ nav {
     font-weight: 600;
 }
 
-.voluntariado h1 {
-    color: rgb(20, 46, 85);
-    text-align: center;
-}
 
 .voluntariado {
     text-align: center;
     margin-top: 20px;
     padding: 100px;
-
+    align-items: center;
 }
 
-.voluntariado-formulario {}
-
-button {
+.boton {
     background-color: rgb(20, 46, 85);
     border: 0;
     border-radius: 6px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    padding: 10px 16px;
-    display: flex;
-}
-
-button a {
+    padding: 12px 22px;
+    display: inline-block;
     color: white;
     font-weight: bold;
     text-decoration: none;
+    min-width: 180px;
+    text-align: center;
 }
 
 
 .voluntariado-formulario img {
-    width: 300px;
+    display: block;
+    width: 100%;
     height: 300px;
     object-fit: cover;
     border-radius: 20px;
@@ -149,109 +134,20 @@ footer {
     background-color: rgb(20, 46, 85);
     color: white;
     padding: 20px;
+    margin-top: 100px;
 }
-
 
 @media (max-width: 768px) {
-
-    header {
-        flex-direction: column;
-        gap: 18px;
-        text-align: center;
-    }
-
-    header nav {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .logo img {
-        width: 120px;
-    }
-
-    .header,
-    .btn {
-        font-size: 14px;
-    }
-
-    section h1 {
-        font-size: 38px;
-        margin-top: 0;
-    }
-
-    .contenedor {
-        padding: 80px 20px;
-    }
-
-    .cold-6 {
-        min-height: auto;
-    }
-
-    .card-1,
-    .card {
-        padding: 30px 20px;
-    }
-
-    .historia {
-        padding: 30px 5%;
-    }
-
-    .tabla {
-        display: block;
-        overflow-x: auto;
-        font-size: 13px;
-    }
-
-    .voluntariado {
-        flex-direction: column;
-        gap: 40px;
-        padding: 50px 5%;
-    }
-
     .voluntariado-formulario {
-        flex-direction: column;
-        text-align: center;
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+        gap: 25px;
+        justify-items: center;
+        align-items: center;
     }
 
-    .voluntariado img {
+    .voluntariado-formulario img {
         width: 100%;
-        max-width: 500px;
-    }
-}
-
-@media (max-width: 480px) {
-    header nav {
-        width: 100%;
-    }
-
-    .header,
-    .btn {
-        width: 100%;
-        text-align: center;
-    }
-
-    section h1 {
-        font-size: 30px;
-    }
-
-    .historia p,
-    .historia-texto p {
-        font-size: 14px;
-    }
-
-    .voluntariado {
-        flex-direction: column;
-        gap: 40px;
-        padding: 50px 5%;
-    }
-
-    .voluntariado-formulario {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .voluntariado img {
-        width: 100%;
-        max-width: 500px;
+        max-width: 260px;
+        height: 260px;
     }
 }
