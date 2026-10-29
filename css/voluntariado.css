@@ -8,6 +8,28 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.voluntariado-formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "donar socio voluntario"
+    ;
+    gap: 30px;
+}
+
+.donar {
+    grid-area: donar;
+}
+
+.socio {
+    grid-area: socio;
+}
+
+.voluntario {
+    grid-area: voluntario;
+}
+
+
 header {
     background-color: white;
     padding: 18px 2%;
@@ -90,36 +112,26 @@ nav {
 
 }
 
-.voluntariado-formulario {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    padding-bottom: 100px;
-}
+.voluntariado-formulario {}
 
-.voluntariado-formulario button {
+button {
     background-color: rgb(20, 46, 85);
     border: 0;
     border-radius: 6px;
     cursor: pointer;
     margin-bottom: 20px;
     padding: 10px 16px;
+    display: flex;
 }
 
-.voluntariado-formulario button a {
+button a {
     color: white;
     font-weight: bold;
     text-decoration: none;
 }
 
-.col-4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
 
-.col-4 img {
+.voluntariado-formulario img {
     width: 300px;
     height: 300px;
     object-fit: cover;
