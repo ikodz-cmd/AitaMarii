@@ -225,7 +225,7 @@ th {
 }
 
 th {
-    background: rgb(20, 46, 85);
+    background-color: rgb(20, 46, 85);
     color: white;
     text-transform: uppercase;
     letter-spacing: 0.5px;
