@@ -11,36 +11,133 @@ body {
 
 header {
     background-color: white;
-    text-align: right;
-    margin: 50px;
+    padding: 18px 2%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 150px;
+    object-fit: cover;
+    align-items: center;
+
+}
+
+header nav {
+    align-items: center;
+    display: flex;
+    gap: 24px;
+    justify-content: flex-end;
 }
 
 .header {
-    color: black;
-    text-decoration-line: none;
-    font-size: 20px;
-    margin-left: 20px;
+    color: rgb(20, 46, 85);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header:hover {
+    color: #f7a60f;
 }
 
 .btn {
-    background-color: black;
+    background-color: rgb(20, 46, 85);
+    border-radius: 6px;
     color: white;
-    padding: 10px 20px;
-    text-decoration-line: none;
-    border-radius: 10px;
-    font-size: 20px;
+    font-size: 16px;
+    padding: 11px 18px;
+    text-decoration: none;
 }
+
+.btn:hover {
+    background-color: #f7a60f;
+    color: rgb(20, 46, 85);
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.btn {
+    background-color: #0f274a;
+    color: white;
+    padding: 10px 22px;
+    text-decoration: none;
+    border-radius: 999px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
 
 .contenedor {
-    padding: 30px;
+    display: flex;
     justify-content: center;
-
+    align-items: center;
+    padding: 110px 40px;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus {
-    border-color: rgb(14, 35, 73);
-    outline: 3px solid;
+.formulario {
+    background: #ffffff;
+    width: min(100%, 520px);
+    padding: 32px 28px;
+    border-radius: 22px;
+    box-shadow: 0 18px 45px rgba(27, 42, 65, 0.12);
+    border: 1px solid #dfeaf7;
+}
+
+.formulario h2 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+    color: #0f274a;
+    text-align: center;
+}
+
+.formulario label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #243b5e;
+}
+
+.formulario input,
+.formulario select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border: 1px solid #c7d9ef;
+    border-radius: 12px;
+    background-color: #f8fbff;
+    font-size: 16px;
+    color: #1b2a41;
+}
+
+.formulario input::placeholder {
+    color: #7a8ea6;
+}
+
+.formulario input:focus,
+.formulario select:focus {
+    border-color: #3d7ad9;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.formulario button {
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    background: #0f274a;
+    color: white;
+    padding: 14px 20px;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 .redes img {
@@ -53,4 +150,47 @@ footer {
     background-color: rgb(20, 46, 85);
     color: white;
     padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 18px;
+        text-align: center;
+    }
+
+    header nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .header,
+    .btn {
+        font-size: 14px;
+    }
+
+    .contenedor {
+        padding: 80px 20px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    header nav {
+        width: 100%;
+    }
+
+    .header,
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+
 }
